@@ -25,7 +25,8 @@ static void s_vExampleFunc(void);
 ********************************************************************************/
 void g_vExampleFunc(void)
 {
-    g_u32Var = 0;
+    g_u32Var = 1;
+    s_u32Var = 1;
     s_vExampleFunc();
 }
 
