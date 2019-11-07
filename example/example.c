@@ -12,13 +12,13 @@
 #include <stdio.h>
 #include "example.h"
 
-static unsigned int s_u32Var;
+static unsigned int s_u32Var; //文件作用域参数在开头声明
 
-static void s_vExampleFunc(void);
+static void s_vExampleFunc(void); //文件作用域函数在开头声明
 
 /********************************************************************************
 *函数定义: void g_vExampleFunc(void)
-*函数功能: 调用文件作用域函数
+*函数功能: 接口函数定义，调用文件作用域函数
 *修改记录: 
 *日期:                作者:                摘要:
       19-11-06             YummoShin            Create
@@ -32,7 +32,7 @@ void g_vExampleFunc(void)
 
 /********************************************************************************
 *函数定义: static void s_vExampleFunc(void)
-*函数功能: 文件作用域函数
+*函数功能: 文件作用域函数在主调函数后面
 *修改记录: 
 *日期:                作者:                摘要:
       19-11-06             YummoShin            Create
