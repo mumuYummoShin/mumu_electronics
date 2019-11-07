@@ -12,8 +12,8 @@
 #ifndef EXAMPLE__H
 #define EXAMPLE__H
 
-unsigned int g_u32Var;
+unsigned int g_u32Var; //全局变量，在头文件中
 
-void g_vExampleFunc(void);
+void g_vExampleFunc(void); //全局函数，在头文件中
 
 #endif
