@@ -19,10 +19,11 @@ static void s_vExampleFunc(void); //文件作用域函数在开头声明
 
 /********************************************************************************
 *函数定义: void g_vExampleFunc(void)
-*函数功能: 接口函数定义，调用文件作用域函数
+*函数功能: 接口函数定义，调用文件作用域函数，函数名前'g_'表示全局函数，'v'返回void类型
 *修改记录: 
 *日期:                作者:                摘要:
       19-11-06             YummoShin            Create
+      19-11-09             YummoShin            Update
 ********************************************************************************/
 void g_vExampleFunc(void)
 {
@@ -33,28 +34,29 @@ void g_vExampleFunc(void)
 
 /********************************************************************************
 *函数定义: static void s_vExampleFunc(void)
-*函数功能: 文件作用域函数在主调函数后面
+*函数功能: 文件作用域函数在主调函数后面，函数名前's_'表示静态函数，'v'返回'void'
 *修改记录: 
 *日期:                作者:                摘要:
       19-11-06             YummoShin            Create
+      19-11-09             YummoShin            Update
 ********************************************************************************/
 static void s_vExampleFunc(void)
 {
-    unsigned int u8Val=0; //局部函数，
-    static unsigned int s_u8Val=0; //局部静态变量，名字前加's_'
+    unsigned int u32Val=0; //局部函数，
+    static unsigned int s_u32Val=0; //局部静态变量，名字前加's_'
 
-    u8Val = s_u8ExampleFunc();
-    s_u8Val = u8Val;
+    u32Val = s_u32ExampleFunc();
+    s_u32Val = u32Val;
 }
 
 /*******************************************************************************
 *函数名称 : static unsigned int s_u8ExampleFunc(void)
-*返回参数 : 文件作用域函数，有返回值
+*返回参数 : 文件作用域函数，有返回值，函数名前'g_'表示静态函数，'u32'返回u32类型
 *函数功能 : 
 *作者 :               日期 :                    摘要 :
 *      Yummo                2019-11-09                创建
 *******************************************************************************/
-static unsigned int s_u8ExampleFunc(void)
+static unsigned int s_u32ExampleFunc(void)
 {
     unsigned int rtn;
 
