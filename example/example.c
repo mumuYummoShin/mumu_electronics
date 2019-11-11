@@ -12,20 +12,23 @@
 #include <stdio.h>
 #include "example.h"
 
+//全局变量声明
+unsigned int g_u32Var;
+
 //文件作用域参数在开头声明，文件内静态变量，参数名前加's_'表示静态变量，'u32'表示数据类型
 static unsigned int s_u32Var;
 
 static void s_vExampleFunc(void); //文件作用域函数在开头声明
 
 /********************************************************************************
-*函数定义: void g_vExampleFunc(void)
+*函数定义: void vExampleFunc(void)
 *函数功能: 接口函数定义，调用文件作用域函数，函数名前'g_'表示全局函数，'v'返回void类型
 *修改记录: 
 *日期:                作者:                摘要:
       19-11-06             YummoShin            Create
       19-11-09             YummoShin            Update
 ********************************************************************************/
-void g_vExampleFunc(void)
+void vExampleFunc(void)
 {
     g_u32Var = 1;
     s_u32Var = 1;
@@ -42,7 +45,7 @@ void g_vExampleFunc(void)
 ********************************************************************************/
 static void s_vExampleFunc(void)
 {
-    unsigned int u32Val=0; //局部函数，
+    unsigned int u32Val=0; //局部变量
     static unsigned int s_u32Val=0; //局部静态变量，名字前加's_'
 
     u32Val = s_u32ExampleFunc();
