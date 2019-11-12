@@ -46,7 +46,8 @@ void vExampleFunc(void)
 static void s_vExampleFunc(void)
 {
     unsigned int u32Val=0; //局部变量
-    static unsigned int s_u32Val=0; //局部静态变量，名字前加's_'
+    static unsigned int s_u32Val=0; //局部静态变量，名字前加's_'，任何函数内静态变量
+                                    //只有一份存储，调用时注意
 
     u32Val = s_u32ExampleFunc();
     s_u32Val = u32Val;
