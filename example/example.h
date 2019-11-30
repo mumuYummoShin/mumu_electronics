@@ -14,6 +14,6 @@
 
 extern unsigned int g_u32Var; //全局变量，在头文件中,参数名前加'g_'表示静态变量，'u32'表示数据类型
 
-void vExampleFunc(void); //全局函数，在头文件中
+extern void vExampleFunc(void); //全局函数，在头文件中
 
 #endif
