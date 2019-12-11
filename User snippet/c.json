@@ -1,0 +1,94 @@
+"filehead":
+	{
+		"prefix":"filehead",
+		"body":
+		[
+			"/*================================================================================",
+			"*",
+			"*",
+			"*                                   韦德电子",
+			"*",
+			"*",
+			"* 项目名称: $WORKSPACE_NAME",
+			"* 文件名称: $TM_FILENAME",
+			"* 创建日期: $CURRENT_YEAR_SHORT-$CURRENT_MONTH-$CURRENT_DATE",
+			"* 文件描述: ",
+			"*",
+			"================================================================================*/\n",
+			"//-public parameter--------------------------------------------------------------\n",
+			"//-private parameter-------------------------------------------------------------\n",
+			"//-private function--------------------------------------------------------------"
+		],
+		"description": "something about the file"
+	},
+
+	"mfilehead":
+	{
+		"prefix":"mfilehead",
+		"body":
+		[
+			"/*================================================================================",
+			"*",
+			"*",
+			"*                                   ",
+			"*",
+			"*",
+			"* 项目名称: $WORKSPACE_NAME",
+			"* 文件名称: $TM_FILENAME",
+			"* 创建日期: $CURRENT_YEAR_SHORT-$CURRENT_MONTH-$CURRENT_DATE",
+			"* 文件描述: ",
+			"*",
+			"================================================================================*/\n",
+			"//-public parameter--------------------------------------------------------------\n",
+			"//-private parameter-------------------------------------------------------------\n",
+			"//-private function--------------------------------------------------------------"
+		],
+		"description": "something about the file"
+	},
+
+	"functionhead":
+	{
+		"prefix": "functionhead",
+		"body": 
+		[
+			"/********************************************************************************",
+			"*函数定义: ",
+			"*函数功能: ",
+			"*修改记录: ",
+			"*日期:                作者:                摘要:",
+			"      $CURRENT_YEAR_SHORT-$CURRENT_MONTH-$CURRENT_DATE             YummoShin            Create",
+			"********************************************************************************/\n"
+		],
+		"description": "something about function"
+	},
+
+	"line public parameter":
+	{
+		"prefix": "publicparameter",
+		"body": 
+		[
+			"//-public parameter--------------------------------------------------------------"
+		],
+		"description": ""
+	},
+
+	"line private parameter":
+	{
+		"prefix": "privateparameter",
+		"body": 
+		[
+			"//-private parameter-------------------------------------------------------------"
+		],
+		"description": ""
+	},
+
+	"line private function":
+	{
+		"prefix": "privatefunction",
+		"body": 
+		[
+			"//-private function--------------------------------------------------------------"
+		],
+		"description": ""
+	},
+}
