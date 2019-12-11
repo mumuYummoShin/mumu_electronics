@@ -22,31 +22,7 @@
 		],
 		"description": "something about the file"
 	},
-
-	"mfilehead":
-	{
-		"prefix":"mfilehead",
-		"body":
-		[
-			"/*================================================================================",
-			"*",
-			"*",
-			"*                                   ",
-			"*",
-			"*",
-			"* 项目名称: $WORKSPACE_NAME",
-			"* 文件名称: $TM_FILENAME",
-			"* 创建日期: $CURRENT_YEAR_SHORT-$CURRENT_MONTH-$CURRENT_DATE",
-			"* 文件描述: ",
-			"*",
-			"================================================================================*/\n",
-			"//-public parameter--------------------------------------------------------------\n",
-			"//-private parameter-------------------------------------------------------------\n",
-			"//-private function--------------------------------------------------------------"
-		],
-		"description": "something about the file"
-	},
-
+	
 	"functionhead":
 	{
 		"prefix": "functionhead",
