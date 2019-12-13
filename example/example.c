@@ -12,12 +12,17 @@
 #include <stdio.h>
 #include "example.h"
 
-//全局变量声明
+//-public parameter--------------------------------------------------------------
 unsigned int g_u32Var;
+unsigned int g_pu32Var;
 
+//-private parameter-------------------------------------------------------------
 //文件作用域参数在开头声明，文件内静态变量，参数名前加's_'表示静态变量，'u32'表示数据类型
 static unsigned int s_u32Var;
+static unsigned int s_pu32Var;
+static MyStruct_t s_tVarMyStruct;
 
+//-private function--------------------------------------------------------------
 static void s_vExampleFunc(void); //文件作用域函数在开头声明
 
 /********************************************************************************
