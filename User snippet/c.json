@@ -36,32 +36,32 @@
 		"description": "something about function"
 	},
 
-	"line public parameter":
+	"line public data":
 	{
-		"prefix": "publicparameter",
+		"prefix": "publicdata",
 		"body": 
 		[
-			"//-public parameter--------------------------------------------------------------"
+			"//-public data-------------------------------------------------------------------"
 		],
 		"description": ""
 	},
 
-	"line private parameter":
+	"line private data":
 	{
-		"prefix": "privateparameter",
+		"prefix": "privatedata",
 		"body": 
 		[
-			"//-private parameter-------------------------------------------------------------"
+			"//-private data------------------------------------------------------------------"
 		],
 		"description": ""
 	},
 
-	"line private function":
+	"line private code":
 	{
-		"prefix": "privatefunction",
+		"prefix": "privatecode",
 		"body": 
 		[
-			"//-private function--------------------------------------------------------------"
+			"//-private code------------------------------------------------------------------"
 		],
 		"description": ""
 	},
