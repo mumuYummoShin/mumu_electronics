@@ -12,18 +12,18 @@
 #include <stdio.h>
 #include "example.h"
 
-//-public parameter--------------------------------------------------------------
-unsigned int g_u32Var;
-unsigned int g_pu32Var;
-
-//-private parameter-------------------------------------------------------------
+//-private data------------------------------------------------------------------
 //文件作用域参数在开头声明，文件内静态变量，参数名前加's_'表示静态变量，'u32'表示数据类型
 static unsigned int s_u32Var;
 static unsigned int s_pu32Var;
 static MyStruct_t s_tVarMyStruct;
 
-//-private function--------------------------------------------------------------
+//-private code------------------------------------------------------------------
 static void s_vExampleFunc(void); //文件作用域函数在开头声明
+
+//-public data-------------------------------------------------------------------
+unsigned int g_u32Var;
+unsigned int g_pu32Var;
 
 /********************************************************************************
 *函数功能: 接口函数定义，调用文件作用域函数，'v'返回void类型
